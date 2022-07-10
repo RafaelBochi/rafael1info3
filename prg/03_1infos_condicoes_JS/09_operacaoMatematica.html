@@ -11,34 +11,226 @@
     const numero2 = Number(prompt(`Digite um número`))
     const calculo = prompt(`Qual operação você deseja fazer? (A para +, S para -, M para x e D para /)`).toUpperCase()
 
-    const calculoDecimalOuInteiro = parseInt(resultado)
 
     if ((calculo == "A")) {
-        const resultado = numero1+numero2
-        
-        if (resultado%2 == 0 && resultado>=0 && resultado-calculoDecimalOuInteiro == 0  ) {
-            document.write (`Resultado: ${resultado}`)
-            document.write (`Par`)
-            document.write (`Positivo`)
-            document.write (`inteiro`)
+        const resultado = numero1 + numero2
+        const calculoDecimalOuInteiro = parseInt(resultado)
+
+        if (resultado % 2 == 0 && resultado >= 0 && resultado - calculoDecimalOuInteiro == 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Par <br>`) 
+            document.write(`Positivo <br>`)
+            document.write(`inteiro <br>`)
         }
-        if (resultado%2 == 0 && resultado<0 && resultado-calculoDecimalOuInteiro == 0  ) {
-            document.write (`Resultado: ${resultado}`)
-            document.write (`Par`)
-            document.write (`Negativo`)
-            document.write (`inteiro`)
+        else if (resultado % 2 == 0 && resultado < 0 && resultado - calculoDecimalOuInteiro == 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Par <br>`)
+            document.write(`Negativo <br>`)
+            document.write(`inteiro <br>`)
         }
-        if (resultado%2 == 0 && resultado>=0 && resultado-calculoDecimalOuInteiro != 0  ) {
-            document.write (`Resultado: ${resultado}`)
-            document.write (`Par`)
-            document.write (`Positivo`)
-            document.write (`decimal`)
+        else if (resultado % 2 == 0 && resultado >= 0 && resultado - calculoDecimalOuInteiro != 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Par <br>`)
+            document.write(`Positivo <br>`)
+            document.write(`decimal <br>`)
         }
-        if (resultado%2 == 0 && resultado>=0 && resultado-calculoDecimalOuInteiro == 0  ) {
-            document.write (`Resultado: ${resultado}`)
-            document.write (`Par`)
-            document.write (`Positivo`)
-            document.write (`inteiro`)
+        else if (resultado % 2 == 0 && resultado < 0 && resultado - calculoDecimalOuInteiro == 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Par <br>`)
+            document.write(`Negativo <br>`)
+            document.write(`inteiro <br>`)
+        }
+
+
+        else if (resultado % 2 != 0 && resultado >= 0 && resultado - calculoDecimalOuInteiro == 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Ímpar <br>`)
+            document.write(`Positivo <br>`)
+            document.write(`Inteiro <br>`)
+        }
+        else if (resultado % 2 != 0 && resultado < 0 && resultado - calculoDecimalOuInteiro == 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Ímpar <br>`)
+            document.write(`Negativo <br>`)
+            document.write(`Inteiro <br>`)
+        }
+        else if (resultado % 2 != 0 && resultado >= 0 && resultado - calculoDecimalOuInteiro != 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Ímpar <br>`)
+            document.write(`Positivo <br>`)
+            document.write(`Decimal <br>`)
+        }
+        else {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Ímpar <br>`)
+            document.write(`Negativo <br>`)
+            document.write(`Decimal <br>`)
         }
     }
+    else if ((calculo == "S")) {
+        const resultado = numero1 - numero2
+        const calculoDecimalOuInteiro = parseInt(resultado)
+
+        if (resultado % 2 == 0 && resultado >= 0 && resultado - calculoDecimalOuInteiro == 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Par <br>`) 
+            document.write(`Positivo <br>`)
+            document.write(`inteiro <br>`)
+        }
+        else if (resultado % 2 == 0 && resultado < 0 && resultado - calculoDecimalOuInteiro == 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Par <br>`)
+            document.write(`Negativo <br>`)
+            document.write(`inteiro <br>`)
+        }
+        else if (resultado % 2 == 0 && resultado >= 0 && resultado - calculoDecimalOuInteiro != 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Par <br>`)
+            document.write(`Positivo <br>`)
+            document.write(`decimal <br>`)
+        }
+        else if (resultado % 2 == 0 && resultado < 0 && resultado - calculoDecimalOuInteiro == 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Par <br>`)
+            document.write(`Negativo <br>`)
+            document.write(`inteiro <br>`)
+        }
+
+
+        else if (resultado % 2 != 0 && resultado >= 0 && resultado - calculoDecimalOuInteiro == 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Ímpar <br>`)
+            document.write(`Positivo <br>`)
+            document.write(`Inteiro <br>`)
+        }
+        else if (resultado % 2 != 0 && resultado < 0 && resultado - calculoDecimalOuInteiro == 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Ímpar <br>`)
+            document.write(`Negativo <br>`)
+            document.write(`Inteiro <br>`)
+        }
+        else if (resultado % 2 != 0 && resultado >= 0 && resultado - calculoDecimalOuInteiro != 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Ímpar <br>`)
+            document.write(`Positivo <br>`)
+            document.write(`Decimal <br>`)
+        }
+        else {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Ímpar <br>`)
+            document.write(`Negativo <br>`)
+            document.write(`Decimal <br>`)
+        }
+    }
+    else if ((calculo == "M")) {
+        const resultado = numero1 * numero2
+        const calculoDecimalOuInteiro = parseInt(resultado)
+
+        if (resultado % 2 == 0 && resultado >= 0 && resultado - calculoDecimalOuInteiro == 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Par <br>`) 
+            document.write(`Positivo <br>`)
+            document.write(`inteiro <br>`)
+        }
+        else if (resultado % 2 == 0 && resultado < 0 && resultado - calculoDecimalOuInteiro == 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Par <br>`)
+            document.write(`Negativo <br>`)
+            document.write(`inteiro <br>`)
+        }
+        else if (resultado % 2 == 0 && resultado >= 0 && resultado - calculoDecimalOuInteiro != 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Par <br>`)
+            document.write(`Positivo <br>`)
+            document.write(`decimal <br>`)
+        }
+        else if (resultado % 2 == 0 && resultado < 0 && resultado - calculoDecimalOuInteiro == 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Par <br>`)
+            document.write(`Negativo <br>`)
+            document.write(`inteiro <br>`)
+        }
+
+
+        else if (resultado % 2 != 0 && resultado >= 0 && resultado - calculoDecimalOuInteiro == 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Ímpar <br>`)
+            document.write(`Positivo <br>`)
+            document.write(`Inteiro <br>`)
+        }
+        else if (resultado % 2 != 0 && resultado < 0 && resultado - calculoDecimalOuInteiro == 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Ímpar <br>`)
+            document.write(`Negativo <br>`)
+            document.write(`Inteiro <br>`)
+        }
+        else if (resultado % 2 != 0 && resultado >= 0 && resultado - calculoDecimalOuInteiro != 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Ímpar <br>`)
+            document.write(`Positivo <br>`)
+            document.write(`Decimal <br>`)
+        }
+        else {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Ímpar <br>`)
+            document.write(`Negativo <br>`)
+            document.write(`Decimal <br>`)
+        }
+    }
+    if ((calculo == "D")) {
+        const resultado = numero1 / numero2
+        const calculoDecimalOuInteiro = parseInt(resultado)
+
+        if (resultado % 2 == 0 && resultado >= 0 && resultado - calculoDecimalOuInteiro == 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Par <br>`) 
+            document.write(`Positivo <br>`)
+            document.write(`inteiro <br>`)
+        }
+        else if (resultado % 2 == 0 && resultado < 0 && resultado - calculoDecimalOuInteiro == 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Par <br>`)
+            document.write(`Negativo <br>`)
+            document.write(`inteiro <br>`)
+        }
+        else if (resultado % 2 == 0 && resultado >= 0 && resultado - calculoDecimalOuInteiro != 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Par <br>`)
+            document.write(`Positivo <br>`)
+            document.write(`decimal <br>`)
+        }
+        else if (resultado % 2 == 0 && resultado < 0 && resultado - calculoDecimalOuInteiro == 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Par <br>`)
+            document.write(`Negativo <br>`)
+            document.write(`inteiro <br>`)
+        }
+
+
+        else if (resultado % 2 != 0 && resultado >= 0 && resultado - calculoDecimalOuInteiro == 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Ímpar <br>`)
+            document.write(`Positivo <br>`)
+            document.write(`Inteiro <br>`)
+        }
+        else if (resultado % 2 != 0 && resultado < 0 && resultado - calculoDecimalOuInteiro == 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Ímpar <br>`)
+            document.write(`Negativo <br>`)
+            document.write(`Inteiro <br>`)
+        }
+        else if (resultado % 2 != 0 && resultado >= 0 && resultado - calculoDecimalOuInteiro != 0) {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Ímpar <br>`)
+            document.write(`Positivo <br>`)
+            document.write(`Decimal <br>`)
+        }
+        else {
+            document.write(`Resultado: ${resultado} <br>`)
+            document.write(`Ímpar <br>`)
+            document.write(`Negativo <br>`)
+            document.write(`Decimal <br>`)
+        }
+    }
+
 </script>
