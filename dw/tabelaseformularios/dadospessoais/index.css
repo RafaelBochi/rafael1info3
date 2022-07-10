@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+input , label {
+    width: 50%;
+    border-left: 50px;
+    margin-bottom: 20px;
+}
+div {
+    width: 40%;
+    height: 800px;
+    background-color: rgb(8, 8, 68);
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 30%;
+}
+input {
+    border: 1px solid black;
+    border-radius: 12px;
+}
