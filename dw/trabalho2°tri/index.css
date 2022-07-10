@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body{
+    background-image: url(fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+h1{
+    text-align: center;
+    font-size: 100px;
+}
+div.titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300px;
+    width: 1000px;
+    position: absolute;
+    left: 400px;
+    top: 0px;
+
+}

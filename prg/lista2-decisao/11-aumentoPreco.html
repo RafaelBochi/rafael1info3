@@ -1,0 +1,60 @@
+<script>
+  // aumentoPreco - Recebe o preço do produto e calcula o aumento do preço, baseado no seguinte critério: até 280 (inclusive): aumento de 20% até 700 (inclusive): aumento de 15% até 1500 (inclusive): aumento de 10% acima de 1500: aumento de 5% Informe: o preço atual, o percentual de aumento, o valor do aumento e o novo preço, todos com duas casas decimais.
+
+  document.write(`<h1>Aumento Preço</h1>`);
+
+  const preco = parseFloat(prompt(`Digite o preço`));
+
+  if (preco <= 280) {
+    const precoPorcentagem = preco * 0.20;
+
+    const precoFinal = parseFloat(preco + precoPorcentagem);
+
+    document.write(`Preço: R$ ${preco.toFixed(2)}<br>`);
+
+    document.write(`Porcentagem: 20%<br>`);
+
+    document.write(`Preço Porcentagem: R$ ${precoFinal.toFixed(2)}<br>`);
+
+    document.write(`Preço Final: R$ ${precoFinal.toFixed(2)}`);
+
+  } else if (preco <= 700) {
+    const precoPorcentagem = preco * 0.15;
+
+    const precoFinal = parseFloat(preco + precoPorcentagem);
+
+    document.write(`Preço: R$ ${preco.toFixed(2)}<br>`);
+
+    document.write(`Porcentagem: 15%<br>`);
+
+    document.write(`Preço Porcentagem: R$ ${precoFinal.toFixed(2)}<br>`);
+
+    document.write(`Preço Final: R$ ${precoFinal.toFixed(2)}`);
+
+  } else if (preco <= 1500) {
+    const precoPorcentagem = preco * 0.10;
+
+    const precoFinal = parseFloat(preco + precoPorcentagem);
+
+    document.write(`Preço: R$ ${preco.toFixed(2)}<br>`);
+
+    document.write(`Porcentagem: 10%<br>`);
+
+    document.write(`Preço Porcentagem: R$ ${precoFinal.toFixed(2)}<br>`);
+
+    document.write(`Preço Final: R$ ${precoFinal.toFixed(2)}`);
+
+  } else {
+    const precoPorcentagem = preco * 0.05;
+
+    const precoFinal = parseFloat(preco + precoPorcentagem);
+
+    document.write(`Preço: R$ ${preco.toFixed(2)}<br>`);
+
+    document.write(`Porcentagem: 5%<br>`);
+
+    document.write(`Preço Porcentagem: R$ ${precoFinal.toFixed(2)}<br>`);
+
+    document.write(`Preço Final: R$ ${precoFinal.toFixed(2)}`);
+  }
+</script>

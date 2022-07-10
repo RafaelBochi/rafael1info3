@@ -1,0 +1,31 @@
+<script>
+//menor3 - Recebe três valores numéricos, e retorna o menor dos três.
+
+document.write("<h1>Menor de 3</h1>")
+
+const valor1 = Number(prompt("Digite um numero"))
+
+const valor2 = Number(prompt("Digite um numero"))
+
+const valor3 = Number(prompt("Digite um numero"))
+
+if (valor1<valor2) {
+    if (valor1<valor3) {
+        document.write (`${valor1}`)
+        }
+    else {
+        document.write (`${valor3}`)
+    }
+}
+else {
+    if (valor2<valor3) {
+        document.write (`${valor2}`)
+        
+    }
+    else{
+        document.write (`${valor3}`)
+    }
+}
+
+
+</script>

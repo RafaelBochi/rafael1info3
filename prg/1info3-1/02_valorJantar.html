@@ -1,0 +1,30 @@
+<meta charset="utf-8" />
+<script>
+    // Elaborar um programa que leia o valor de um jantar. Calcule e informe o valor da taxa do garçom (10%) e o valor total a ser pago, ambos com duas casas decimais.
+
+    // Exemplo:
+    // Valor do Jantar RS: 80.00
+    // Taxa do Garçom RS: 8.00
+    // Total a Pagar R$: 88.00
+
+    // entrada
+
+    document.write (`<h1>Valor Jantar</h1>`)
+
+    const valordojantar = parseFloat(prompt(`Valor do jantar`))
+
+    // processamento
+
+    const taxadogarcom = parseFloat((valordojantar/100)*10)
+
+    const valortotal = parseFloat(valordojantar+taxadogarcom)
+
+    // saida
+
+    document.write (`Valor do jantar: R$ ${valordojantar.toFixed(2)}<br>`)
+
+    document.write (`Taxa do garçom: R$ ${taxadogarcom.toFixed(2)}<br>`)
+
+    document.write (`Valor total: R$ ${valortotal.toFixed(2)}<br>`)
+
+</script>

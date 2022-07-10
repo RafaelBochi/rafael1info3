@@ -1,0 +1,133 @@
+@charset "UTF-8";
+h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 90px;
+}
+body {
+  font-size: 30px;
+  background-image: url(fun.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  margin: 20px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+div.gif, div.titulo {
+  margin: 15px;
+}
+div.cabecalho {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+}
+div.titulo {
+  height: 227px;
+  text-align: center;
+}
+div.imagens1 {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin: 10px;
+  text-align: center;
+}
+a.idolos {
+    text-align: center;
+}
+button.curiosidades{
+  padding: 20px 40px;
+  border-radius: 12px;
+  font-size: 20px;
+  border-color: white;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+}
+h3, p.imagem2{
+  text-align: center;
+}
+button.idolos {
+  border-radius: 12px;
+  padding: 20px 40px;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  border-color: white;
+}
+button.pssimportantes {
+  border-radius: 12px;
+  padding: 20px 40px;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  border-color: white;
+}
+div.bloco1, div.bloco2 {
+  background-color: black;
+  color:rgb(255, 255, 255);
+  padding: 12px;
+  border-radius: 12px;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  padding: 20px;
+}
+img.imagenstrio1, img.imagenstrio2, img.imagenstrio3{
+  border-radius: 12px;
+  border-style: solid;
+  border-image: 1px;
+  border-color: black;
+}
+.button {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  border: none;
+float: inline-end
+}
+
+.menu {
+  position: relative;
+  display: inline-block;
+  height: 80px;
+width: 300px;
+}
+
+.paginas {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+}
+
+.paginas a {
+  color: rgb(0, 0, 0);
+  padding: 6px 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+float: right;
+}
+.menu:hover .paginas {
+  display: block;
+}
+.paginas a:hover {
+background-color: #ddd;
+border-radius: 20px;
+}
+button.momentosimportantes {
+  border-radius: 12px;
+  padding: 20px 40px;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  border-color: white;
+}
+
+

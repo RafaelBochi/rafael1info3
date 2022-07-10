@@ -1,0 +1,54 @@
+<script>
+//imc - Escreva uma função que calcula o índice de massa corporal (imc = peso / altura ** 2),  de acordo com a seguinte tabela:
+//imc <= 18.5: "Subpeso"
+//    imc <= 25.0: "Normal"
+//    imc <= 30.0: "Sobrepeso"
+//    imc > 30: "Obeso"
+
+document.write (`<h1>IMC</h1>`)
+
+const peso = parseFloat(prompt(`Digite o peso`))
+
+const altura = parseFloat(prompt(`Digite a altura`))
+
+const imc = (peso/(altura** 2))
+
+if (imc <= 18.5){
+    document.write (`Peso: ${peso}<br>`)
+
+    document.write (`Altura: ${altura}<br>`)
+
+    document.write (`IMC: ${imc}<br>`)
+
+    document.write (`Massa Corporal: Subpeso`)
+} 
+else if (imc<= 25){
+    document.write (`Peso: ${peso}<br>`)
+
+    document.write (`Altura: ${altura}<br>`)
+
+    document.write (`IMC: ${imc}<br>`)
+
+    document.write (`Massa Corporal: Normal`)
+
+}
+else if (imc<= 30){
+    document.write (`Peso: ${peso}<br>`)
+
+    document.write (`Altura: ${altura}<br>`)
+
+    document.write (`IMC: ${imc}<br>`)
+
+    document.write (`Massa Corporal: Sobrepeso`)
+}
+else {
+
+    document.write (`Peso: ${peso}<br>`)
+
+    document.write (`Altura: ${altura}<br>`)
+
+    document.write (`IMC: ${imc}<br>`)
+
+    document.write (`Massa Corporal: Obeso`)
+}
+</script>

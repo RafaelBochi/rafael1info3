@@ -1,0 +1,85 @@
+<script>
+//baskara - Calcule as raízes de uma equação do segundo grau, na forma ax2 + bx + c. A função recebe a, b e c e //faz as consistências, informando ao usuário nas seguintes situações:
+//    - Se o usuário informar o valor de A igual a zero é uma equaçao do 1o grau.
+//    - Se o delta calculado for negativo, a equação não possui raízes reais.
+//    - Se o delta calculado for igual a zero a equação possui apenas uma
+//    raiz real. 
+//    - Se o delta for positivo, a equação possui duas raízes reais.
+
+document.write (`<h1>Baskara</h1>`)
+
+const a = Number(prompt(`Digite o A`))
+
+const b = Number(prompt(`Digite o B`))
+
+const c = Number(prompt(`Digite o C`))
+
+const calculoDelta = Number(a*1**2 + b*1 + c)
+
+if (a==0 && calculoDelta<0){
+    document.write (`A = ${a}<br>`)
+
+    document.write (`B = ${b}<br>`)
+
+    document.write (`C = ${c}<br>`)
+
+    document.write (`Equação do 1o grau<br>`)
+
+    document.write (`Equação não possuis raízes reias.`)
+}
+
+else if (calculoDelta==0 && a==0){
+
+    document.write (`A = ${a}<br>`)
+
+    document.write (`B = ${b}<br>`)
+
+    document.write (`C = ${c}<br>`)
+
+    document.write (`Equação do 1o grau<br>`)
+
+    document.write (`Equação possui apenas uma raiz real.`)
+}
+
+else if (calculoDelta>0 && a==0){
+    document.write (`A = ${a}<br>`)
+
+document.write (`B = ${b}<br>`)
+
+document.write (`C = ${c}<br>`)
+
+document.write (`Equação do 1o grau<br>`)
+
+document.write (`Equação possui duas raízes reais.`)
+}
+else if (calculoDelta<0){
+    document.write (`A = ${a}<br>`)
+
+    document.write (`B = ${b}<br>`)
+
+    document.write (`C = ${c}<br>`)
+
+    document.write (`Equação não possuis raízes reias.`)
+}
+
+else if (calculoDelta==0){
+
+    document.write (`A = ${a}<br>`)
+
+    document.write (`B = ${b}<br>`)
+
+    document.write (`C = ${c}<br>`)
+
+    document.write (`Equação possui apenas uma raiz real.`)
+}
+
+else{
+    document.write (`A = ${a}<br>`)
+
+document.write (`B = ${b}<br>`)
+
+document.write (`C = ${c}<br>`)
+
+document.write (`Equação possui duas raízes reais.`)
+}
+</script>

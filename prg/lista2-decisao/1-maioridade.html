@@ -1,0 +1,26 @@
+<script>
+
+//Maioridade - Leia a idade de uma pessoa e informe se ela já chegou à maioridade. Se ela ainda não chegou, informe quantos anos faltam para a maioridade.
+
+document.write ("<h1>Maior idade</h1>")
+
+const idade = parseInt(prompt("Informe sua idade"))
+
+if (idade < 18) {
+    const idadeRestante = (10-idade)
+
+    document.write (`Idade: ${idade}<br>`)
+
+    document.write (`É maior de idade? Não<br>`)
+
+    document.write (`Faltam quantos anos para maior idade? ${idadeRestante}`)
+}
+else {
+    document.write (`Idade: ${idade}<br>`)
+
+    document.write (`É maior de idade? Sim`)
+}
+
+
+
+</script>

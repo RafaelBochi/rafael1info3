@@ -1,0 +1,41 @@
+<script>
+    /*
+    //PROBLEMA
+    Faça um script para um caixa eletrônico. O script deverá perguntar ao usuário a valor do saque e depois informar quantas notas de cada valor serão fornecidas. As notas disponíveis serão as de 1, 5, 10, 50 e 100 reais. O valor mínimo é de 10 reais e o máximo de 600 reais. O script não deve se preocupar com a quantidade de notas existentes na máquina.
+
+    Exemplo: Para sacar a quantia de 256 reais, o script fornece duas notas de 100, uma nota de 50, uma nota de 5 e uma nota de 1;
+    Exemplo: Para sacar a quantia de 399 reais, o script fornece três notas de 100, uma nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1.
+    */
+
+    document.write (`<h1>Caixa Eletronico</h1>`)
+
+    //ENTRADA
+
+const valor = parseInt(prompt(`Saque um valor (min 10R$ e max 600R$`))
+
+    //PROCESSAMENTO
+    if (valor>=100 && valor<=600){
+        const notade100 = parseInt(valor/100)
+        const notade50 = parseInt((valor % 100) /50) 
+        const notade10 =  parseInt(((valor % 100)-notade50*50)/10)
+        const notade1 = parseInt(((valor % 100)-notade50*50)%10)
+        document.write (`Notas de 100: ${notade100}<br>`)
+        document.write (` Notas de 50: ${notade50}<br>`) 
+        document.write (` Notas de 10: ${notade10}<br>`) 
+        document.write (`Notas de 1: ${notade1}`)
+    }
+    else if (valor<=99 && valor>=10){
+        const notade50 = parseInt((valor % 100) /50) 
+        const notade10 =  parseInt(((valor % 100)-notade50*50)/10)
+        const notade1 = parseInt(((valor % 100)-notade50*50)%10)
+        document.write (` Notas de 50: ${notade50}<br>`) 
+        document.write (` Notas de 10: ${notade10}<br>`) 
+        document.write (`Notas de 1: ${notade1}`)
+    }
+    else {
+        document.write (`Não conseguimos sacar o valor`)
+    }
+    //SAÍDA
+
+
+</script>

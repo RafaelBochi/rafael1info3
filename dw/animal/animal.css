@@ -1,0 +1,36 @@
+p.a
+{
+    text-align: justify;
+}
+h2.b {
+     text-align: center;
+}
+p.c {
+   text-align: center;
+}
+h2 {
+   font-size: 30px;
+}
+h1 {
+   text-align: center;
+   font-size: 60px;
+   color: rgb(0, 0, 0)
+}
+
+body {
+   font-size: 20px;
+   text-align: center;
+   text-align: justify;
+   color: rgb(0, 0, 0);
+   background-image: linear-gradient(rgb(113, 216, 219), rgb(201, 104, 100), rgb(140, 214, 137), rgb(255, 255, 255) );
+}
+p.n {
+    text-align: justify;
+}
+h2.d {
+      text-align: justify;
+}
+
+p.f {
+    text-align: justify;
+}

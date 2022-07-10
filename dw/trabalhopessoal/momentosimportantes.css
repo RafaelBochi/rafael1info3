@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+body{
+background-image: url(fun.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 30px;
+}
+div.cabecalho{
+  display: grid;
+grid-template-columns: 87% 13%;
+}
+h1{
+    text-align: center;
+    font-size: 70px;
+}
+div.imgareia{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
+strong{
+    font-size: 50px;
+}
+img{
+    border-radius: 12px;
+}
+.button {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    border: none;
+  text-align: center;
+
+  }
+  
+  .menu {
+    display: block;
+  background-color: transparent;
+height: 80px;
+width: 200px;
+padding-right: 60px;
+text-align: center;
+float: right; }
+  
+  .paginas {
+    display: none;
+    background-color: #ffffff;
+    padding: 0px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .paginas a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    float: right;
+    padding: 8px;
+  }
+  .menu:hover .paginas {
+    display: block;
+  }
+  .paginas a:hover {
+  background-color: rgb(224, 224, 224);
+  border-radius: 20px;
+  }
+
+div.formatura, .pcampeonato, .escoladomar, .sah, .areia, .ifc {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  padding: 12px;
+  border-radius: 12px;
+  width: 700px;
+  margin-left: 90px;
+}
+.titulo {
+  padding-left: 300px;
+}
+.bloco1, .bloco2, .bloco3 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,44 @@
+<script>
+    /*
+    //PROBLEMA
+    Faça um script que leia 2 números e em seguida pergunte ao usuário qual operação ele deseja realizar. O resultado da operação deve ser acompanhado de uma frase que diga se o número é:
+    - par ou ímpar;
+    - positivo ou negativo;
+    - inteiro ou decimal.
+    */
+
+    const numero1 = Number(prompt(`Digite um número`))
+    const numero2 = Number(prompt(`Digite um número`))
+    const calculo = prompt(`Qual operação você deseja fazer? (A para +, S para -, M para x e D para /)`).toUpperCase()
+
+    const calculoDecimalOuInteiro = parseInt(resultado)
+
+    if ((calculo == "A")) {
+        const resultado = numero1+numero2
+        
+        if (resultado%2 == 0 && resultado>=0 && resultado-calculoDecimalOuInteiro == 0  ) {
+            document.write (`Resultado: ${resultado}`)
+            document.write (`Par`)
+            document.write (`Positivo`)
+            document.write (`inteiro`)
+        }
+        if (resultado%2 == 0 && resultado<0 && resultado-calculoDecimalOuInteiro == 0  ) {
+            document.write (`Resultado: ${resultado}`)
+            document.write (`Par`)
+            document.write (`Negativo`)
+            document.write (`inteiro`)
+        }
+        if (resultado%2 == 0 && resultado>=0 && resultado-calculoDecimalOuInteiro != 0  ) {
+            document.write (`Resultado: ${resultado}`)
+            document.write (`Par`)
+            document.write (`Positivo`)
+            document.write (`decimal`)
+        }
+        if (resultado%2 == 0 && resultado>=0 && resultado-calculoDecimalOuInteiro == 0  ) {
+            document.write (`Resultado: ${resultado}`)
+            document.write (`Par`)
+            document.write (`Positivo`)
+            document.write (`inteiro`)
+        }
+    }
+</script>

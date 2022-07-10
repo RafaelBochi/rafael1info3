@@ -1,0 +1,29 @@
+<meta charset="utf-8" />
+<script>
+    // Elaborar um programa que leia a duração de uma viagem em dias e horas. Calcule e informe a duração total da viagem em número de horas.
+
+    // Exemplo:
+    // Número de dias: 2
+    // Número de horas: 5
+    // Total de horas: 53
+
+    // entrada
+    document.write (`<h1> Duração Viajem</h1>`)
+
+    const dias = parseInt(prompt(`Quantos dias de viajem`))
+
+    const horas = parseFloat (prompt(`Quantas horas de viajem`))
+
+    // processamento
+
+    const horastotal = parseFloat(dias*24+horas)
+
+    // saida
+
+    document.write (`Dias: ${dias}<br>`)
+
+    document.write (`Horas: ${horas}<br>`)
+
+    document.write (`Duração Total: ${horastotal} horas.<br>`)
+
+</script>
