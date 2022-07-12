@@ -13,13 +13,57 @@
     Escreva um algoritmo que leia o número de litros vendidos, o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 6,50 o preço do litro do álcool é R$ 6,10.
     */
 
-    //ENTRADA
+    const combustivel = prompt(`Indique qual combustível vc quer?(A para Álcool e G para Gasolina)`).toUpperCase()
+    const litros = Number(prompt(`Quantos litros vc quer?`))
 
+    if (combustivel === "A") {
 
-    //PROCESSAMENTO
+        const precoCombustivel = litros * 6.10
 
-    
-    //SAÍDA
+        if (litros <= 20) {
+
+            const combustivelDesconto = precoCombustivel - precoCombustivel * 0.03
+
+                document.write(`Combustível: Álcool <br>`)
+            document.write(`Preço Litro: R$ 6.10  <br>`)
+            document.write(`Preço Total: R$ ${precoCombustivel}  <br>`)
+            document.write(`Preço com Desconto: R$ ${combustivelDesconto}`)
+        }
+
+        else {
+            const combustivelDesconto = precoCombustivel - precoCombustivel * 0.05
+
+                document.write(`Combustível: Álcool <br>`)
+            document.write(`Preço Litro: R$ 6.10  <br>`)
+            document.write(`Preço Total: R$ ${precoCombustivel}  <br>`)
+            document.write(`Preço com Desconto: R$ ${combustivelDesconto}`)
+        }
+    }
+
+    else {
+
+        const precoCombustivel = litros * 6.50
+
+if (litros <= 20) {
+
+    const combustivelDesconto = precoCombustivel - precoCombustivel * 0.04
+
+        document.write(`Combustível: Gasolina <br>`)
+    document.write(`Preço Litro: R$ 6.50  <br>`)
+    document.write(`Preço Total: R$ ${precoCombustivel}  <br>`)
+    document.write(`Preço com Desconto: R$ ${combustivelDesconto}`)
+}
+
+else {
+    const combustivelDesconto = precoCombustivel - precoCombustivel * 0.06
+
+        document.write(`Combustível: Gasolina <br>`)
+    document.write(`Preço Litro: R$ 6.50  <br>`)
+    document.write(`Preço Total: R$ ${precoCombustivel}  <br>`)
+    document.write(`Preço com Desconto: R$ ${combustivelDesconto}`)
+}
+        
+    } 
 
 
 </script>
