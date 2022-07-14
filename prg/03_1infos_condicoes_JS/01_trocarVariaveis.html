@@ -1,17 +1,22 @@
 <script>
-    /*
+  /*
     //PROBLEMA
     Faça um script que pede dois inteiros e armazene eles em duas variáveis.
     Em seguida, troque o valor das variáveis, invertendo e exibindo o antes e o depois em uma janela de alert.
     */
 
-    const numero1 = parseInt(prompt(`Digite um número`))
-    const numero2 = parseInt(prompt(`Digite um número`))
+  let numero1 = parseInt(prompt(`Digite um número`));
+  let numero2 = parseInt(prompt(`Digite um número`));
 
-    alert (`Antes:
-Numero1 = ${numero1}
-Numero2 = ${numero2}
-Depois: 
-Numero1 = ${numero2}
-Numero2 = ${numero1}`)
+  const troca = numero1;
+
+  numero1 = numero2;
+  numero2 = troca;
+
+  document.write(`Antes:<br>
+Numero1 = ${numero2} <br>
+Numero2 = ${numero1}<br>
+Depois: <br>
+Numero1 = ${numero1} <br>
+Numero2 = ${numero2}`);
 </script>

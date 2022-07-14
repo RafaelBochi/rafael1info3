@@ -24,8 +24,147 @@
 
   const unidadesArredondado = Math.floor(unidades);
 
-  document.write(`${centena}, ${dezenasArredondado}, ${unidadesArredondado}`);
-  //PROCESSAMENTO
-
-  //SAÍDA
+  if (centena > 1 && dezenasArredondado > 1 && unidadesArredondado > 1) {
+    document.write(
+      `${centena} Centenas, ${dezenasArredondado} Dezenas e ${unidadesArredondado} Unidades `
+    );
+  } else if (
+    centena === 1 &&
+    dezenasArredondado > 1 &&
+    unidadesArredondado > 1
+  ) {
+    document.write(
+      `${centena} Centena, ${dezenasArredondado} Dezenas e ${unidadesArredondado} Unidades `
+    );
+  } else if (
+    centena > 1 &&
+    dezenasArredondado === 1 &&
+    unidadesArredondado > 1
+  ) {
+    document.write(
+      `${centena} Centenas, ${dezenasArredondado} Dezena e ${unidadesArredondado} Unidades `
+    );
+  } else if (
+    centena > 1 &&
+    dezenasArredondado > 1 &&
+    unidadesArredondado === 1
+  ) {
+    document.write(
+      `${centena} Centenas, ${dezenasArredondado} Dezenas e ${unidadesArredondado} Unidade `
+    );
+  } else if (
+    centena > 1 &&
+    dezenasArredondado === 1 &&
+    unidadesArredondado === 1
+  ) {
+    document.write(
+      `${centena} Centenas, ${dezenasArredondado} Dezena e ${unidadesArredondado} Unidade`
+    );
+  } else if (
+    centena === 1 &&
+    dezenasArredondado === 1 &&
+    unidadesArredondado === 1
+  ) {
+    document.write(
+      `${centena} Centena, ${dezenasArredondado} Dezena e ${unidadesArredondado} Unidade`
+    );
+  } else if (
+    centena === 0 &&
+    dezenasArredondado > 1 &&
+    unidadesArredondado > 1
+  ) {
+    document.write(
+      `${dezenasArredondado} Dezenas e ${unidadesArredondado} Unidades`
+    );
+  } else if (
+    centena === 0 &&
+    dezenasArredondado === 1 &&
+    unidadesArredondado > 1
+  ) {
+    document.write(
+      `${dezenasArredondado} Dezena e ${unidadesArredondado} Unidades`
+    );
+  } else if (
+    centena === 0 &&
+    dezenasArredondado > 1 &&
+    unidadesArredondado === 1
+  ) {
+    document.write(
+      `${dezenasArredondado} Dezenas e ${unidadesArredondado} Unidade`
+    );
+  } else if (
+    centena === 0 &&
+    dezenasArredondado === 1 &&
+    unidadesArredondado === 1
+  ) {
+    document.write(
+      `${dezenasArredondado} Dezena e ${unidadesArredondado} Unidade`
+    );
+  } else if (
+    centena === 0 &&
+    dezenasArredondado === 0 &&
+    unidadesArredondado > 1
+  ) {
+    document.write(`${unidadesArredondado} Unidades`);
+  } else if (
+    centena === 0 &&
+    dezenasArredondado === 0 &&
+    unidadesArredondado === 1
+  ) {
+    document.write(`${unidadesArredondado} Unidade`);
+  } else if (
+    centena > 1 &&
+    dezenasArredondado == 0 &&
+    unidadesArredondado > 1
+  ) {
+    document.write(`${centena} Centenas e ${unidadesArredondado} Unidades`);
+  } else if (
+    centena == 1 &&
+    dezenasArredondado == 0 &&
+    unidadesArredondado > 1
+  ) {
+    document.write(`${centena} Centena e ${unidadesArredondado} Unidades`);
+  } else if (
+    centena > 1 &&
+    dezenasArredondado == 0 &&
+    unidadesArredondado == 1
+  ) {
+    document.write(`${centena} Centenas e ${unidadesArredondado} Unidade`);
+  } else if (
+    centena > 1 &&
+    dezenasArredondado == 0 &&
+    unidadesArredondado == 1
+  ) {
+    document.write(`${centena} Centenas`);
+  } else if (
+    centena == 1 &&
+    dezenasArredondado == 0 &&
+    unidadesArredondado == 1
+  ) {
+    document.write(`${centena} Centena e 1 Unidade`);
+  }
+  else if (
+    centena == 1 &&
+    dezenasArredondado == 0 &&
+    unidadesArredondado == 0
+  ) {
+    document.write(`${centena} Centena`);
+  }
+  else if (
+    centena == 0 &&
+    dezenasArredondado > 1 &&
+    unidadesArredondado == 0
+  ) {
+    document.write(`${dezenasArredondado} dezenas`);
+  }
+  else if (
+    centena == 0 &&
+    dezenasArredondado == 1 &&
+    unidadesArredondado == 0
+  ) {
+    document.write(`${dezenasArredondado} Dezena`);
+  }
+  else {
+    document.write(`0 Centenas ,0 Dezena e 0 Unidades`);
+  }
 </script>
