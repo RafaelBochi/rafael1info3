@@ -5,7 +5,7 @@
     De acordo com as respostas, informe qual a estação do ano correspondente.
     */
 
-    const hemisferio = prompt(`Em qual hemisfério vc está? (N para Norte, S para Sul, O1 para oriental e O2 para ocidental)`)
+    const hemisferio = prompt(`Em qual hemisfério vc está? (N para Norte, S para Sul)`)
     const mes = prompt(`Em qual mês está? (1 para Janeiro, 2 para Fevereiro, 3 para Março...)`)
 
     if (hemisferio == "N") {
@@ -25,16 +25,16 @@
     } 
     else if (hemisferio == "S") {
 
-if (mes == "1" || mes == "2" || mes == "3") {
+if (mes == "7" || mes == "8" || mes == "9") {
     document.write (`Inverno`)
 }
-else if (mes == "4" || mes == "5" || mes == "6") {
+else if (mes == "10" || mes == "11" || mes == "12") {
     document.write ("Primavera")
 }
-else if (mes == "7" || mes == "8" || mes == "9") {
+else if (mes == "1" || mes == "2" || mes == "3") {
     document.write ("Verão")
 }
-else if (mes == "10" || mes == "11" || mes == "12") {
+else if (mes == "4" || mes == "5" || mes == "6") {
     document.write ("Outono")
 }
 } 
