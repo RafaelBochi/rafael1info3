@@ -21,10 +21,13 @@
         valor = valor % 50
         const notas10 = Math.floor (valor / 10)
         valor = valor % 10
+        const notas5 = Math.floor (valor/5)
+        valor = valor % 5 
 
         document.write (`Notas de 100: ${notas100}<br>`)
         document.write (` Notas de 50: ${notas50}<br>`) 
         document.write (` Notas de 10: ${notas10}<br>`) 
+        document.write (` Notas de 5: ${notas5}<br>`)
         document.write (`Notas de 1: ${valor}`)
     }
     else {
