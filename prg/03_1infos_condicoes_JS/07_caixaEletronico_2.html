@@ -1,5 +1,5 @@
 <script>
-    /*
+  /*
     //PROBLEMA
     Faça um script para um caixa eletrônico. O script deverá perguntar ao usuário a valor do saque e depois informar quantas notas de cada valor serão fornecidas. As notas disponíveis serão as de 1, 5, 10, 50 e 100 reais. O valor mínimo é de 10 reais e o máximo de 600 reais. O script não deve se preocupar com a quantidade de notas existentes na máquina.
 
@@ -7,33 +7,36 @@
     Exemplo: Para sacar a quantia de 399 reais, o script fornece três notas de 100, uma nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1.
     */
 
-    document.write (`<h1>Caixa Eletronico</h1>`)
+  document.write(`<h1>Caixa Eletronico</h1>`);
 
-    //ENTRADA
+  //ENTRADA
 
-    let valor = parseInt(prompt(`Saque um valor (min 10R$ e max 600R$`))
+  let valor = parseInt(prompt(`Saque um valor (min 10R$ e max 600R$`));
 
-    //PROCESSAMENTO
-    if (valor >= 10 && valor <= 600) {
-        const notas100 = Math.floor(valor / 100)
-        valor = valor % 100
-        const notas50 = Math.floor (valor / 50)
-        valor = valor % 50
-        const notas10 = Math.floor (valor / 10)
-        valor = valor % 10
-        const notas5 = Math.floor (valor/5)
-        valor = valor % 5 
+  let mesagemFinal = "";
+  //PROCESSAMENTO
+  if (valor >= 10 && valor <= 600) {
+    const notas100 = Math.floor(valor / 100);
+    valor = valor % 100;
+    const notas50 = Math.floor(valor / 50);
+    valor = valor % 50;
+    const notas10 = Math.floor(valor / 10);
+    valor = valor % 10;
+    const notas5 = Math.floor(valor / 5);
+    valor = valor % 5;
 
-        document.write (`Notas de 100: ${notas100}<br>`)
-        document.write (` Notas de 50: ${notas50}<br>`) 
-        document.write (` Notas de 10: ${notas10}<br>`) 
-        document.write (` Notas de 5: ${notas5}<br>`)
-        document.write (`Notas de 1: ${valor}`)
-    }
-    else {
-        document.write (`Não conseguimos sacar o valor`)
-    }
-    //SAÍDA
+    if (notas100 > 0)
+      mesagemFinal += `Notas de 100: ${notas100}<br>`;
+    if (notas50 > 0)
+      mesagemFinal += `Notas de 50: ${notas50}<br>`;
+    if (notas10 > 0)
+      mesagemFinal += `Notas de 10: ${notas10}<br>`;
+    if (notas5 > 0) mesagemFinal += `Notas de 5: ${notas5}<br>`;
+    if (valor > 0) mesagemFinal += `Notas de 1: ${valor}`;
 
-
+    document.write (mesagemFinal)
+  } else {
+    document.write(`Não conseguimos sacar o valor`);
+  }
+  //SAÍDA
 </script>

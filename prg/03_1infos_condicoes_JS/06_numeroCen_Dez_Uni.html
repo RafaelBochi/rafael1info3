@@ -15,14 +15,12 @@
   const numero = parseInt(prompt("Digite um numero menor que 1000"));
 
   const centena = Math.floor(numero / 100);
-
   const dezenas = (numero - Math.floor(numero / 100) * 100) / 10;
-
   const dezenasArredondado = Math.floor(dezenas);
-
   const unidades = numero - centena * 100 - dezenasArredondado * 10;
-
   const unidadesArredondado = Math.floor(unidades);
+
+  if (numero < 1000) {
 
   if (centena > 1 && dezenasArredondado > 1 && unidadesArredondado > 1) {
     document.write(
@@ -166,5 +164,9 @@
   }
   else {
     document.write(`0 Centenas ,0 Dezena e 0 Unidades`);
+  }
+  }
+  else {
+    alert (`Erro`)
   }
 </script>
