@@ -58,6 +58,15 @@
     document.write(
       `${centena} Centenas, ${dezenasArredondado} Dezena e ${unidadesArredondado} Unidade`
     );
+  }
+    else if (
+    centena > 1 &&
+    dezenasArredondado === 0 &&
+    unidadesArredondado === 0
+  ) {
+    document.write(
+      `${centena} Centenas, ${dezenasArredondado} Dezena e ${unidadesArredondado} Unidade`
+    );
   } else if (
     centena === 1 &&
     dezenasArredondado === 1 &&
